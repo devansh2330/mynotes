@@ -75,6 +75,8 @@ void main() {
           email: 'email',
           password: 'password',
         );
+        final user = provider.currentUser;
+        expect(user, isNotNull);
       });
     },
   );
